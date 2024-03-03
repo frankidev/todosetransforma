@@ -1,9 +1,8 @@
 import "../assets/styles/page.card.scss";
-const Card = () => {
-
+const Card = ({name}: {name: string}) => {
     return (        
         <article className="card">
-            <h3 className="h3">Este es el comienzo de las tarjetas</h3>
+            <h3 className="h3">{name}</h3>
         </article>        
     )
 }
