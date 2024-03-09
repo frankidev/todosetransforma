@@ -1,7 +1,7 @@
 // src/components/Header.js (renombrado a Header.jsx para mayor claridad)
 "use client";
 import React, { useState } from "react";
-import "../assets/styles/page.header.scss"; // Asegúrate de que esta ruta sea correcta
+import "../../assets/styles/page.header.scss"; // Asegúrate de que esta ruta sea correcta
 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);

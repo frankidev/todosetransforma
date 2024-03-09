@@ -31,12 +31,6 @@
 }
 
 
-/* Estilos para el menú de navegación en dispositivos móviles */
-.nav.open {
-  display: block;
-  /* Agrega estilos para mostrar el menú desplegado */
-}
-
 .mobile-menu-trigger {
   display: none; /* Ocultar el botón en pantallas grandes */
   /* Estilos para el botón de activación del menú móvil */
@@ -44,9 +38,17 @@
 
 @media (max-width: 768px) {
   .mobile-menu-trigger {
-    display: block; /* Mostrar el botón en pantallas pequeñas */
+    display: block; 
   }
-  .nav {
-    display: none; /* Ocultar el menú en pantallas pequeñas */
+  .header {
+    .nav {
+      display: none; 
+    }
+    .nav {
+      &.open {
+        display: block;
+      }
+    }
   }
+  
 }
